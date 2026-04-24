@@ -1,98 +1,75 @@
 """
-ANTIGRAVITY ULTIMATE - Multi-AI Team Edition
-Implements the MNC-style collaboration:
-- Gemini (Research) -> Claude (Storytelling) -> GPT-OSS (Refinement) -> Python (Execution)
-- Orchestrator (Control)
+ANTIGRAVITY ULTIMATE - Mythos AI OS Edition
+The "One System, Two Brains" MNC-style production pipeline.
+Integrates Gemini, Claude, GPT-OSS, and the Mythos Learning Loop.
 """
 import os
 import json
 import sys
-import time
 from datetime import datetime
-from concurrent.futures import ThreadPoolExecutor
 
 # Add parent directory to path to import agents
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from core.mythos_orchestrator import MythosOrchestrator
 from agents.multi_ai_team import MultiAITeam
+from agents.training_bridge import TrainingBridge
 from agents.quality import quality_check, improve_script
 from agents.voice import voice_agent
 from agents.video import video_agent
 from agents.upload import upload_video
 from agents.hollywood_production import apply_hollywood_standards
-from agents.api_connectors import APIConnector
 
-MEMORY_PATH = "system/performance_memory.json"
-
-def load_memory():
-    if os.path.exists(MEMORY_PATH):
-        try:
-            with open(MEMORY_PATH, "r") as f:
-                return json.load(f)
-        except:
-            pass
-    return {"videos_produced": [], "total_revenue": 0, "failed_attempts": 0}
-
-def run_mnc_production_cycle(niche="horror_true_crime"):
-    """The MNC-style production cycle using the Multi-AI Team."""
-    print(f"\n🚀 [ORCHESTRATOR] INITIALIZING MNC PRODUCTION CYCLE [{datetime.now().strftime('%H:%M:%S')}]")
+def run_mythos_production_cycle(niche="horror_true_crime"):
+    print(f"\n🌌 [MYTHOS AI OS] INITIALIZING UNIFIED PRODUCTION CYCLE [{datetime.now().strftime('%H:%M:%S')}]")
     
+    mythos = MythosOrchestrator()
     team = MultiAITeam()
-    memory = load_memory()
-    api = APIConnector()
+    bridge = TrainingBridge()
     
-    # 1. GEMINI: RESEARCH
-    print("\n--- PHASE 1: GEMINI (RESEARCH) ---")
+    # 1. ROUTING & RESEARCH (Gemini)
+    print("\n--- PHASE 1: STRATEGIC RESEARCH (Gemini) ---")
+    research_trace = mythos.process_task("Niche & Competitor Research", 80) # Complex
     research_data = team.run_research_phase(niche)
-    
-    # 2. CLAUDE: STORYTELLING
-    print("\n--- PHASE 2: CLAUDE (STORYTELLING) ---")
+    if research_trace["brain"] == "PRO":
+        bridge.distill_reasoning(research_trace)
+
+    # 2. STORYTELLING (Claude)
+    print("\n--- PHASE 2: CINEMATIC STORYTELLING (Claude) ---")
+    story_trace = mythos.process_task("Cinematic Narrative Architecture", 90) # Very Complex
     story_data = team.run_storytelling_phase(research_data)
-    
-    # 3. GPT-OSS: REFINEMENT
-    print("\n--- PHASE 3: GPT-OSS (REFINEMENT) ---")
+    if story_trace["brain"] == "PRO":
+        bridge.distill_reasoning(story_trace)
+
+    # 3. REFINEMENT (GPT-OSS 120B)
+    print("\n--- PHASE 3: REFINEMENT & POLISH (GPT-OSS) ---")
+    refine_trace = mythos.process_task("Script Refinement & Quality Polish", 75) # Complex
     refined_data = team.run_refinement_phase(story_data["script"])
-    
-    # 4. PYTHON: EXECUTION & QUALITY
-    print("\n--- PHASE 4: PYTHON (EXECUTION & QUALITY) ---")
-    # Convert refined data into a full script object for the pipeline
-    # (In a real system, this would be a structured JSON from GPT-OSS)
+    if refine_trace["brain"] == "PRO":
+        bridge.distill_reasoning(refine_trace)
+
+    # 4. EXECUTION (Python)
+    print("\n--- PHASE 4: TECHNICAL EXECUTION (Python) ---")
     from agents.script import script_agent
     script = script_agent({"topic": "Tinley Park 5 Massacre"}, "The Unsolved Mystery", "long_form", niche=niche)
     
     quality = quality_check(script)
     if not quality['passed']:
-        print("⚠️ Quality Check Failed. GPT-OSS & Python collaborating on fix...")
+        print("⚠️ Quality Check Failed. Triggering Auto-Improvement...")
         script = improve_script(script, quality)
     
     # 5. HOLLYWOOD PRODUCTION
-    print("\n--- PHASE 5: HOLLYWOOD PRODUCTION ---")
+    print("\n--- PHASE 5: HOLLYWOOD CINEMATIC ASSEMBLY ---")
     voice_plan = voice_agent(script, niche=niche)
     video_plan = video_agent(script, voice_plan, niche=niche)
     hollywood_plan = apply_hollywood_standards(video_plan)
     
-    # 6. DISTRIBUTION
-    print("\n--- PHASE 6: DISTRIBUTION & MEMORY ---")
+    # 6. DISTRIBUTION & LEARNING
+    print("\n--- PHASE 6: DISTRIBUTION & SYSTEM UPGRADE ---")
     upload_package = upload_video(hollywood_plan, script, {"primary": {"title": "The Unsolved Mystery"}}, niche=niche, timing_data={"recommended_day": "Tuesday", "local_time": "2:00 PM"})
     
-    # Update memory
-    memory["videos_produced"].append({
-        "title": "The Unsolved Mystery",
-        "date": datetime.now().isoformat(),
-        "team_performance": {
-            "Gemini": "Success",
-            "Claude": "Success",
-            "GPT-OSS": "Success",
-            "Python": "Success"
-        },
-        "quality_score": quality['score']
-    })
-    
-    with open(MEMORY_PATH, "w") as f:
-        json.dump(memory, f, indent=2)
-        
-    print(f"\n✅ MNC CYCLE COMPLETE. Video ready for upload.")
+    print(f"\n✅ [MYTHOS] CYCLE COMPLETE. System has learned from this production.")
     return True
 
 if __name__ == "__main__":
-    run_mnc_production_cycle()
+    run_mythos_production_cycle()
