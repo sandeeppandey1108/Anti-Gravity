@@ -1,7 +1,6 @@
 """
 ANTIGRAVITY ULTIMATE - The Production-Ready Autonomous System
-Combines Research, Strategy, Scripting, Quality Control, and Memory.
-Implements the "Self-Managing" loop from the vision document.
+Refined Version: Includes Hollywood Standards, API Connectors, and Fix-and-Retry logic.
 """
 import os
 import json
@@ -19,8 +18,8 @@ from agents.quality import quality_check, improve_script
 from agents.voice import voice_agent
 from agents.video import video_agent
 from agents.upload import upload_video
-from agents.analytics import analyze
-from agents.optimization import update_memory
+from agents.hollywood_production import apply_hollywood_standards
+from agents.api_connectors import APIConnector
 
 MEMORY_PATH = "system/performance_memory.json"
 
@@ -34,19 +33,25 @@ def load_memory():
     return {"videos_produced": [], "total_revenue": 0, "failed_attempts": 0}
 
 def run_production_cycle(niche="horror_true_crime"):
-    """A single production cycle: Research -> Script -> Quality -> Production -> Upload"""
-    print(f"\n--- STARTING PRODUCTION CYCLE: {datetime.now().strftime('%H:%M:%S')} ---")
+    """A single production cycle: Research -> Script -> Quality -> Hollywood Production -> Upload"""
+    print(f"\n--- STARTING ULTIMATE PRODUCTION CYCLE: {datetime.now().strftime('%H:%M:%S')} ---")
     memory = load_memory()
+    api = APIConnector()
+    
+    # 0. API CHECK
+    print("🔌 PHASE 0: API CONNECTIVITY CHECK")
+    print(f"  YouTube: {api.connect_youtube()}")
+    print(f"  ElevenLabs: {api.connect_elevenlabs()}")
     
     # 1. RESEARCH & STRATEGY
-    print("🔍 PHASE 1: RESEARCH & STRATEGY")
+    print("\n🔍 PHASE 1: RESEARCH & STRATEGY")
     research_data = research(niche=niche, memory=memory)
     ideas = generate_ideas(research_data["selected_topic"], niche=niche, transformation=research_data["transformation"])
     strategy = select_winning_idea(rank_ideas(ideas), research_data)
     print(f"✅ Selected Topic: {strategy['primary']['title']}")
     
     # 2. SCRIPT & QUALITY (with Fix & Retry Logic)
-    print("✍️ PHASE 2: SCRIPTING & QUALITY CONTROL")
+    print("\n✍️ PHASE 2: SCRIPTING & QUALITY CONTROL")
     script = script_agent(research_data["selected_topic"], strategy['primary']['title'], "long_form", niche=niche)
     
     max_retries = 3
@@ -63,15 +68,18 @@ def run_production_cycle(niche="horror_true_crime"):
         memory["failed_attempts"] = memory.get("failed_attempts", 0) + 1
         return False
 
-    # 3. PRODUCTION
-    print("🎬 PHASE 3: PRODUCTION (VOICE & VIDEO)")
+    # 3. HOLLYWOOD PRODUCTION
+    print("\n🎬 PHASE 3: HOLLYWOOD PRODUCTION (VOICE & VIDEO)")
     voice_plan = voice_agent(script, niche=niche)
     video_plan = video_agent(script, voice_plan, niche=niche)
-    print(f"✅ Production Plans Ready. Est. Duration: {video_plan['target_duration']}")
+    
+    # Apply Hollywood Standards (Effects, Transitions, Subtitles)
+    hollywood_plan = apply_hollywood_standards(video_plan)
+    print(f"✅ Hollywood Standards Applied: {hollywood_plan['color_grade']} grading, {len(hollywood_plan['transitions'])} transitions.")
     
     # 4. DISTRIBUTION & MEMORY
-    print("📤 PHASE 4: DISTRIBUTION & MEMORY UPDATE")
-    upload_package = upload_video(video_plan, script, strategy, niche=niche, timing_data=research_data["timing"])
+    print("\n📤 PHASE 4: DISTRIBUTION & MEMORY UPDATE")
+    upload_package = upload_video(hollywood_plan, script, strategy, niche=niche, timing_data=research_data["timing"])
     
     # Update memory
     memory["videos_produced"].append({
@@ -80,25 +88,15 @@ def run_production_cycle(niche="horror_true_crime"):
         "quality_score": quality['score'],
         "niche": niche,
         "status": "ready_for_upload",
-        "scheduled_time": upload_package['schedule']['datetime_est']
+        "scheduled_time": upload_package['schedule']['datetime_est'],
+        "production_level": "Hollywood"
     })
     
     with open(MEMORY_PATH, "w") as f:
         json.dump(memory, f, indent=2)
         
-    print(f"✅ CYCLE COMPLETE. Scheduled for: {upload_package['schedule']['datetime_est']}")
+    print(f"\n✅ ULTIMATE CYCLE COMPLETE. Scheduled for: {upload_package['schedule']['datetime_est']}")
     return True
 
-def run_autonomous_loop(interval_hours=6):
-    """The 24/7 Autonomous Loop as requested in the vision document"""
-    print(f"🚀 ANTIGRAVITY AI OS INITIALIZED - RUNNING EVERY {interval_hours} HOURS")
-    while True:
-        success = run_production_cycle()
-        print(f"\nCycle finished. Sleeping for {interval_hours} hours...")
-        # In a real environment, this would be a cron job or a long-running process
-        # For this simulation, we'll just show the logic
-        break 
-
 if __name__ == "__main__":
-    # Default to a single cycle for demonstration, but capable of full loop
     run_production_cycle()
