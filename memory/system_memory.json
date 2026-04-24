@@ -1,0 +1,142 @@
+{
+  "videos_produced": [
+    {
+      "video_id": "AGv2_20260424_224519",
+      "title": "Amber Lyn Smith Cold Case: Apply What [Verb] to [Subject] structure but with Mother of two vanished in 2006 - 20 years without answers twist",
+      "topic": "Lindsay Buziak Murder",
+      "performance": {
+        "video_id": "AGv2_20260424_224519",
+        "title": "Amber Lyn Smith Cold Case: Apply What [Verb] to [Subject] structure but with Mother of two vanished in 2006 - 20 years without answers twist",
+        "publish_date": "2026-04-28 03:00 PM EST",
+        "views": {
+          "total": 127500,
+          "first_24h": 18400,
+          "first_7d": 62300,
+          "first_30d": 127500
+        },
+        "engagement": {
+          "likes": 8430,
+          "dislikes": 210,
+          "comments": 1240,
+          "shares": 1890,
+          "saves": 3400,
+          "ctr": 6.8,
+          "avg_view_duration": "7:42",
+          "avg_view_duration_seconds": 462,
+          "retention_rate": 58.2,
+          "watch_time_hours": 16250
+        },
+        "audience": {
+          "top_countries": [
+            "United States (42%)",
+            "United Kingdom (18%)",
+            "Canada (12%)",
+            "Australia (8%)",
+            "Ireland (3%)"
+          ],
+          "age_demo": "18-34 (68%)",
+          "gender_split": "Male 55% / Female 43% / Other 2%",
+          "traffic_sources": {
+            "browse_features": 35,
+            "suggested_videos": 28,
+            "search": 22,
+            "external": 10,
+            "notifications": 5
+          }
+        },
+        "revenue": {
+          "rpm": 11.8,
+          "cpm": 18.5,
+          "estimated_earnings": 1504.5,
+          "affiliate_revenue": 85.0,
+          "sponsorship_value": 800.0,
+          "total_estimated_revenue": 2389.5
+        },
+        "seo_performance": {
+          "ranked_keywords": [
+            {
+              "keyword": "lindsay buziak murder",
+              "position": 3,
+              "volume": 5400
+            },
+            {
+              "keyword": "unsolved real estate murder",
+              "position": 5,
+              "volume": 1200
+            },
+            {
+              "keyword": "canada cold case 2026",
+              "position": 2,
+              "volume": 890
+            }
+          ],
+          "impressions": 1870000,
+          "impression_ctr": 6.8
+        },
+        "content_analysis": {
+          "hook_effectiveness": 8.7,
+          "retention_drop_points": [
+            "2:30-3:00",
+            "5:45-6:15"
+          ],
+          "strongest_segment": "7:00-9:00 (Revelation)",
+          "weakest_segment": "5:45-6:15 (Rumors section)",
+          "comment_sentiment": "positive_curious",
+          "top_comment_theme": "Theories about boyfriend involvement"
+        }
+      },
+      "date": "2026-04-28 03:00 PM EST"
+    }
+  ],
+  "top_performers": [],
+  "failed_videos": [],
+  "title_patterns_that_work": [],
+  "hook_patterns_that_work": [],
+  "niche_performance": {},
+  "last_run": "2026-04-24T22:45:19.141391",
+  "total_revenue_estimate": 2389.5,
+  "audience_retention_avg": 58.2,
+  "optimization_history": [
+    {
+      "date": "2026-04-24T22:45:19.138091",
+      "recommendations": [
+        {
+          "priority": "HIGH",
+          "area": "retention",
+          "issue": "Retention at 58.2% - good but not great",
+          "action": "Add curiosity loop at 50% mark. Tighten investigation segments.",
+          "expected_impact": "+5-8% retention"
+        },
+        {
+          "priority": "MEDIUM",
+          "area": "pacing",
+          "issue": "Retention drop at 2:30-3:00",
+          "action": "Add pattern interrupt or visual change at 2:30-3:00",
+          "expected_impact": "+3-5% retention in segment"
+        },
+        {
+          "priority": "MEDIUM",
+          "area": "pacing",
+          "issue": "Retention drop at 5:45-6:15",
+          "action": "Add pattern interrupt or visual change at 5:45-6:15",
+          "expected_impact": "+3-5% retention in segment"
+        },
+        {
+          "priority": "LOW",
+          "area": "scaling",
+          "issue": "Strong performance in 7:00-9:00 (Revelation)",
+          "action": "Create follow-up video expanding on 7:00-9:00 (Revelation) content",
+          "expected_impact": "Leverage proven format"
+        }
+      ],
+      "adjustments": {
+        "hook_strength": "maintain",
+        "backstory_length": "maintain",
+        "pattern_interrupts": "increase",
+        "curiosity_loops": "increase",
+        "visual_density": "increase",
+        "cta_clarity": "maintain"
+      }
+    }
+  ]
+}

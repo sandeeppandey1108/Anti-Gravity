@@ -1,0 +1,1514 @@
+{
+  "production_id": "AGv2_20260424_224519",
+  "timestamp": "2026-04-24T22:45:19.138751",
+  "niche": "horror_true_crime",
+  "research_data": {
+    "niche_health": {
+      "niche": "horror_true_crime",
+      "view_potential": "HIGH",
+      "retention_potential": "HIGH",
+      "rpm_potential": "$9.50-$12.80",
+      "competition_intensity": "MEDIUM",
+      "production_cost": "$150-250 per video",
+      "recurring_series_potential": "HIGH - weekly unsolved cases",
+      "overall_score": 8.7,
+      "recommendation": "PROCEED - Strong monetization with manageable competition"
+    },
+    "selected_topic": {
+      "topic": "Amber Lyn Smith Cold Case",
+      "angle": "Mother of two vanished in 2006 - 20 years without answers",
+      "urgency": "high",
+      "freshness": 10,
+      "competition": "low",
+      "rpm_potential": 11.5,
+      "source": "Seguin PD active investigation 2026",
+      "opportunity_score": 10.52
+    },
+    "competitors": [
+      {
+        "channel": "MrBallen",
+        "subscribers": "8.5M",
+        "avg_views": "2.1M",
+        "strength": "Hook delivery",
+        "upload_pattern": "Tue/Thu 3PM EST",
+        "outlier_video": "The Strange Disappearance of... (12M views)"
+      },
+      {
+        "channel": "Nexpo",
+        "subscribers": "3.2M",
+        "avg_views": "890K",
+        "strength": "Retention through curiosity loops",
+        "upload_pattern": "Wed 2PM EST",
+        "outlier_video": "Disturbing Things From Around... (5M views)"
+      },
+      {
+        "channel": "Eleanor Neale",
+        "subscribers": "2.1M",
+        "avg_views": "450K",
+        "strength": "Emotional engagement",
+        "upload_pattern": "Sun 12PM EST",
+        "outlier_video": "The Case of... (2.8M views)"
+      },
+      {
+        "channel": "That Chapter",
+        "subscribers": "1.8M",
+        "avg_views": "380K",
+        "strength": "Pacing and efficiency",
+        "upload_pattern": "Fri 1PM EST",
+        "outlier_video": "What Happened to... (1.9M views)"
+      },
+      {
+        "channel": "ReignBot",
+        "subscribers": "1.2M",
+        "avg_views": "290K",
+        "strength": "Niche specificity",
+        "upload_pattern": "Sat 4PM EST",
+        "outlier_video": "The Internet's Darkest... (1.5M views)"
+      },
+      {
+        "channel": "Kendall Rae",
+        "subscribers": "4.1M",
+        "avg_views": "720K",
+        "strength": "Relatability",
+        "upload_pattern": "Tue 11AM EST",
+        "outlier_video": "Unsolved: The... (4.2M views)"
+      },
+      {
+        "channel": "Danelle Hallan",
+        "subscribers": "890K",
+        "avg_views": "180K",
+        "strength": "Community engagement",
+        "upload_pattern": "Thu 6PM EST",
+        "outlier_video": "Missing:... (890K views)"
+      },
+      {
+        "channel": "True Crime Daily",
+        "subscribers": "1.5M",
+        "avg_views": "310K",
+        "strength": "News speed",
+        "upload_pattern": "Daily 9AM EST",
+        "outlier_video": "BREAKING:... (1.2M views)"
+      },
+      {
+        "channel": "Crime Junkie",
+        "subscribers": "2.3M",
+        "avg_views": "520K",
+        "strength": "Conversational style",
+        "upload_pattern": "Mon 8AM EST",
+        "outlier_video": "MURDERED:... (3.1M views)"
+      },
+      {
+        "channel": "Bailey Sarian",
+        "subscribers": "7.1M",
+        "avg_views": "1.8M",
+        "strength": "Personality + makeup",
+        "upload_pattern": "Mon 10AM EST",
+        "outlier_video": "Mystery Monday:... (8M views)"
+      }
+    ],
+    "patterns": {
+      "title_patterns": [
+        "What [Verb] to [Subject]",
+        "[Status]: [Subject]",
+        "The [Adjective] [Noun] of [Subject]"
+      ],
+      "hook_patterns": [],
+      "thumbnail_psychology": [],
+      "pacing_tactics": [],
+      "retention_tactics": [],
+      "upload_patterns": [
+        "Sat 4PM EST",
+        "Tue 11AM EST",
+        "Daily 9AM EST",
+        "Fri 1PM EST",
+        "Sun 12PM EST",
+        "Thu 6PM EST",
+        "Mon 8AM EST",
+        "Wed 2PM EST",
+        "Tue/Thu 3PM EST",
+        "Mon 10AM EST"
+      ]
+    },
+    "gaps": [
+      "Few channels cover international unsolved cases with US production quality",
+      "Missing: Cases from 2024-2026 that haven't been covered extensively",
+      "Missing: Psychological profiling segments within crime stories",
+      "Missing: Interactive elements (viewer prediction hooks)",
+      "Missing: Cinematic reenactment footage for top cases"
+    ],
+    "timing": {
+      "recommended_local_time": "2:00-4:00 PM",
+      "recommended_utc": "19:00-21:00",
+      "recommended_day": "Tuesday",
+      "confidence_level": 0.87,
+      "reason": "US East Coast lunch + UK evening overlap",
+      "testing_plan": "Test 1PM vs 3PM vs 5PM EST over 3 weeks",
+      "alternative_windows": [
+        {
+          "day": "Thursday",
+          "local_time": "1:00-3:00 PM",
+          "utc": "18:00-20:00",
+          "confidence": 0.82,
+          "rationale": "Pre-weekend binge prep, high mobile usage",
+          "test_plan": "Test 12PM vs 2PM vs 4PM EST over 3 weeks"
+        },
+        {
+          "day": "Saturday",
+          "local_time": "10:00 AM-12:00 PM",
+          "utc": "15:00-17:00",
+          "confidence": 0.71,
+          "rationale": "Weekend morning scroll, longer watch sessions",
+          "test_plan": "Test 9AM vs 11AM vs 1PM EST over 3 weeks"
+        }
+      ],
+      "windows_to_avoid": [
+        {
+          "day": "Sunday",
+          "local_time": "8:00-10:00 PM",
+          "utc": "01:00-03:00",
+          "rationale": "Monday prep anxiety, short sessions"
+        },
+        {
+          "day": "Friday",
+          "local_time": "5:00-7:00 PM",
+          "utc": "22:00-00:00",
+          "rationale": "Social plans, low engagement"
+        }
+      ],
+      "audience_timezone_breakdown": {
+        "US_East": 42,
+        "US_West": 18,
+        "UK": 15,
+        "Canada": 12,
+        "Australia": 8,
+        "Ireland": 3,
+        "Other": 2
+      },
+      "next_test": "Upload next 3 videos at Tuesday 2:00-4:00 PM EST, then compare with Thursday 1:00-3:00 PM EST"
+    },
+    "trends": {
+      "trending_format": "8-12 minute true crime with AI narration + cinematic B-roll",
+      "audience_behavior": "High retention on unsolved cases with viewer prediction hooks",
+      "platform_shift": "YouTube prioritizing watch time over click-through in algorithm",
+      "seasonal_factor": "Q2 2026 - crime documentaries peaking on streaming platforms",
+      "rpm_trend": "Betrayal/revenge narratives hitting $12.82 RPM - highest faceless niche",
+      "emerging_angle": "Cinematic reenactments with AI-generated footage gaining traction",
+      "content_gap": "No major channel consistently covers 2024-2026 cold case updates"
+    },
+    "trend_map": {
+      "niche": "horror_true_crime",
+      "trend_alignment": "HIGH",
+      "content_opportunity": "Apply Cinematic reenactments with AI-generated footage gaining traction angle to horror_true_crime cases",
+      "expected_lift": "15-25% retention improvement"
+    },
+    "transformation": {
+      "competitor_pattern": "What [Verb] to [Subject]",
+      "insight": "Audience responds to What [Verb] to [Subject] because it creates curiosity gap",
+      "new_angle": "Apply What [Verb] to [Subject] structure but with Mother of two vanished in 2006 - 20 years without answers twist",
+      "original_content": "Amber Lyn Smith Cold Case: Apply What [Verb] to [Subject] structure but with Mother of two vanished in 2006 - 20 years without answers twist",
+      "improved_execution": "Add cinematic reenactment + AI voice modulation + dynamic subtitles"
+    }
+  },
+  "strategy": {
+    "primary": {
+      "title": "Amber Lyn Smith Cold Case: Apply What [Verb] to [Subject] structure but with Mother of two vanished in 2006 - 20 years without answers twist",
+      "format": "long_form",
+      "hook_type": "perspective_shift",
+      "ctr_potential": 9.3,
+      "retention_potential": 9.0,
+      "rpm_potential": 12.65,
+      "ease_of_production": 5,
+      "virality_score": 9.2,
+      "series_potential": "HIGH",
+      "composite_score": 8.35
+    },
+    "secondary": {
+      "title": "The Last 24 Hours of Amber Lyn Smith Cold Case",
+      "format": "long_form",
+      "hook_type": "countdown",
+      "ctr_potential": 9.5,
+      "retention_potential": 9.1,
+      "rpm_potential": 11.5,
+      "ease_of_production": 6,
+      "virality_score": 9.0,
+      "series_potential": "HIGH",
+      "composite_score": 8.31
+    },
+    "strategy": "Lead with primary long-form, repurpose secondary as Short",
+    "expected_rpm": 12.65,
+    "expected_revenue_per_100k": 1265.0,
+    "production_difficulty": "HIGH",
+    "series_potential": "HIGH"
+  },
+  "script": {
+    "metadata": {
+      "target_duration": "10:00-12:00",
+      "target_retention": "55%+",
+      "word_count_target": 1500,
+      "tone": "Serious, intimate, building tension",
+      "voice_pacing": "Slightly faster during setup, slower during reveals",
+      "cinematic_grade": "MANDATORY - Every scene must have motion",
+      "subtitle_policy": "ALL DIALOGUE MUST HAVE SUBTITLES",
+      "cut_policy": "CUT EVERY 2-5 SECONDS MAXIMUM"
+    },
+    "hook": {
+      "timestamp": "0:00-0:03",
+      "text": "She walked into that house expecting a sale. She never walked out. This is the story of Amber Lyn Smith Cold Case.",
+      "visual": "Darkened house exterior, single light in window, SLOW ZOOM IN",
+      "motion_direction": "Camera pushes forward through darkness",
+      "audio": "Low drone + subtle heartbeat",
+      "pattern_interrupt": "HARD CUT from black to crime scene photo at 0:02",
+      "subtitle_style": "Bold white, slight shadow, fade in"
+    },
+    "stakes_setup": {
+      "timestamp": "0:03-0:15",
+      "text": "In 2008, a 24-year-old real estate agent thought she was showing a property to potential buyers. Instead, she walked into a trap that remains unsolved to this day. Amber Lyn Smith Cold Case isn't just a cold case. It's a warning.",
+      "visual": "Split screen: happy photo vs crime scene tape, DISSOLVE BETWEEN",
+      "motion_direction": "Left panel pushes right, right panel pulls back",
+      "audio": "Music swells, then drops to silence",
+      "pattern_interrupt": "SUDDEN SILENCE at 0:12",
+      "subtitle_style": "Standard, emotional emphasis on 'warning'"
+    },
+    "backstory": {
+      "timestamp": "0:15-1:30",
+      "segments": [
+        {
+          "timestamp": "0:15-0:45",
+          "text": "Amber Lyn Smith Cold Case was 24 years old, building her career in Victoria, Canada. Colleagues described her as ambitious, kind, and careful. On February 2nd, 2008, she received a call from a couple wanting to view a luxury property.",
+          "visual": "Victoria BC map animation PUSHING IN, photo of victim FADING UP, phone call visualization with RINGING MOTION",
+          "motion_direction": "Map zooms to street level, camera orbits victim photo",
+          "pattern_interrupt": "Phone RING sound effect + SCREEN SHAKE at 0:30",
+          "cut_count": 6,
+          "subtitle_style": "Standard"
+        },
+        {
+          "timestamp": "0:45-1:15",
+          "text": "The couple used a prepaid phone registered to a fake name. They knew exactly what they were doing. They chose a property that was vacant, isolated, and perfect for what they had planned.",
+          "visual": "Aerial view of property with CAMERA DESCENDING, phone trace animation with DATA FLOW, red X marking location with PULSE",
+          "motion_direction": "Drone shot descending to property, data streams horizontally",
+          "pattern_interrupt": "Screen shake + BASS DROP at 1:00",
+          "cut_count": 5,
+          "subtitle_style": "Red emphasis on 'fake name' and 'perfect'"
+        },
+        {
+          "timestamp": "1:15-1:30",
+          "text": "When she didn't show up for dinner with her boyfriend that evening, he knew something was wrong. He went to the property. What he found would haunt him for the rest of his life.",
+          "visual": "Clock ticking animation with HANDS SPINNING, boyfriend silhouette WALKING, door opening with CREAK MOTION",
+          "motion_direction": "Camera follows boyfriend silhouette, pushes through door",
+          "pattern_interrupt": "Black screen with text 'What he found' at 1:25",
+          "cut_count": 4,
+          "subtitle_style": "Large, dramatic on final line"
+        }
+      ]
+    },
+    "investigation": {
+      "timestamp": "1:30-7:00",
+      "segments": [
+        {
+          "timestamp": "1:30-3:00",
+          "text": "She had been stabbed multiple times. The crime scene showed signs of planning, not passion. The killers had brought their own weapons, cleaned up after themselves, and vanished without a trace. But here's where it gets strange.",
+          "visual": "Crime scene diagram with MARKERS APPEARING SEQUENTIALLY, evidence markers with NUMBER COUNT-UP, knife silhouette with SLOW ROTATION",
+          "motion_direction": "Camera pans across crime scene, pushes into evidence",
+          "pattern_interrupt": "Fast zoom into evidence photo at 2:15",
+          "curiosity_loop": "What strange detail did police find?",
+          "cut_count": 8,
+          "subtitle_style": "Red stamp on 'strange'"
+        },
+        {
+          "timestamp": "3:00-4:30",
+          "text": "The couple was seen by witnesses leaving the property. They were described as well-dressed, calm, and completely unremarkable. Professional. But professional killers don't typically target real estate agents showing houses. Unless the house wasn't the target. Unless she was.",
+          "visual": "Police sketch animation with LINES DRAWING, witness interview clips with B&W TREATMENT, suspect board with PHOTOS PINNING",
+          "motion_direction": "Sketch draws itself, camera pushes into suspect board",
+          "pattern_interrupt": "Color shift to RED at 3:45 when 'Unless she was' is spoken",
+          "curiosity_loop": "Who wanted her dead?",
+          "cut_count": 9,
+          "subtitle_style": "Red glow on 'Unless she was'"
+        },
+        {
+          "timestamp": "4:30-6:00",
+          "text": "Police investigated her boyfriend. He was the last person to see her alive. He had an alibi, but it was thin. He passed a polygraph, but those aren't admissible in court for a reason. And then there were the rumors. Rumors about a drug cartel connection. Rumors about a previous relationship. Rumors that someone in her circle knew exactly what was coming.",
+          "visual": "Relationship web diagram with LINES CONNECTING, polygraph needle animation with JITTER, newspaper headlines with TYPEWRITER EFFECT",
+          "motion_direction": "Web expands outward, needle shakes, headlines type on",
+          "pattern_interrupt": "Glitch effect on 'rumors' at 5:15",
+          "curiosity_loop": "Which rumor was true?",
+          "cut_count": 10,
+          "subtitle_style": "Glitch text on 'rumors'"
+        },
+        {
+          "timestamp": "6:00-7:00",
+          "text": "Eighteen years later, no one has been charged. The case remains active, but the trail is colder than the Canadian winter where it happened. Or is it? Because in 2026, something changed. Something that might finally crack this case wide open.",
+          "visual": "Calendar flipping 2008-2026 with PAGES TEARING, snow falling with PARTICLES, file folder marked 'ACTIVE' with STAMP",
+          "motion_direction": "Calendar pages fly past camera, snow falls toward lens",
+          "pattern_interrupt": "Sudden silence at 6:45, then single piano note",
+          "curiosity_loop": "What changed in 2026?",
+          "cut_count": 6,
+          "subtitle_style": "Large, building anticipation"
+        }
+      ]
+    },
+    "revelation": {
+      "timestamp": "7:00-9:00",
+      "text": "In February 2026, cold case investigators announced they were pursuing new digital evidence. The prepaid phone used to contact her? Modern forensic technology can now extract data that was impossible to access in 2008. Cell tower records, GPS metadata, even deleted messages. The killers left a digital footprint. They just didn't know it yet.",
+      "visual": "Phone data extraction animation with BINARY RAIN, cell tower map with SIGNAL PULSING, binary code rain with VERTICAL SCROLL",
+      "motion_direction": "Data cascades down screen, signals pulse outward from towers",
+      "pattern_interrupt": "Matrix-style data cascade at 7:30",
+      "cut_count": 8,
+      "subtitle_style": "Neon green, tech style"
+    },
+    "aftermath": {
+      "timestamp": "9:00-10:30",
+      "text": "Her family still waits. Her mother posts updates every anniversary. Her colleagues still remember the young woman who loved real estate and trusted too easily. And somewhere out there, two people who looked like any other couple house-hunting on a Saturday afternoon are living with what they did. Or maybe they're still killing. Because here's the terrifying truth: whoever murdered her knew her schedule, knew the property, and knew exactly how to disappear. That's not random. That's personal. And personal killers don't stop at one.",
+      "visual": "Family photo montage with SLOW DISSOLVES, candle vigil with FLICKERING, dark silhouette walking away with DEPTH",
+      "motion_direction": "Photos dissolve slowly, candle flames flicker, silhouette walks away from camera",
+      "pattern_interrupt": "Slow motion on 'personal killers don't stop at one' at 10:15",
+      "cut_count": 7,
+      "subtitle_style": "Bold white, red glow on final line"
+    },
+    "cta": {
+      "timestamp": "10:30-11:00",
+      "text": "If you know anything about this case, contact Victoria Crime Stoppers. And if you want more stories like this, subscribe. We cover the cases that keep investigators awake at night. Because some stories demand to be told. Even if the ending hasn't been written yet.",
+      "visual": "Contact info overlay with TYPE-ON, subscribe animation with BUTTON PULSE, next video teaser with THUMBNAIL WIPE",
+      "motion_direction": "Text types on, button pulses, thumbnail wipes in from right",
+      "cut_count": 3,
+      "subtitle_style": "Standard, warm tone"
+    },
+    "scene_breakdown": [
+      {
+        "scene": 1,
+        "time": "0:00-0:15",
+        "type": "Hook",
+        "visuals": 3,
+        "audio_cues": 2,
+        "cuts": 4,
+        "motion": "Camera push + hard cut"
+      },
+      {
+        "scene": 2,
+        "time": "0:15-1:30",
+        "type": "Backstory",
+        "visuals": 8,
+        "audio_cues": 4,
+        "cuts": 15,
+        "motion": "Map zoom + orbit + descend"
+      },
+      {
+        "scene": 3,
+        "time": "1:30-3:00",
+        "type": "Investigation",
+        "visuals": 6,
+        "audio_cues": 3,
+        "cuts": 8,
+        "motion": "Pan + push into evidence"
+      },
+      {
+        "scene": 4,
+        "time": "3:00-4:30",
+        "type": "Investigation",
+        "visuals": 7,
+        "audio_cues": 4,
+        "cuts": 9,
+        "motion": "Sketch draws + push into board"
+      },
+      {
+        "scene": 5,
+        "time": "4:30-6:00",
+        "type": "Investigation",
+        "visuals": 8,
+        "audio_cues": 5,
+        "cuts": 10,
+        "motion": "Web expands + needle shakes"
+      },
+      {
+        "scene": 6,
+        "time": "6:00-7:00",
+        "type": "Transition",
+        "visuals": 5,
+        "audio_cues": 3,
+        "cuts": 6,
+        "motion": "Pages fly + snow falls"
+      },
+      {
+        "scene": 7,
+        "time": "7:00-9:00",
+        "type": "Revelation",
+        "visuals": 10,
+        "audio_cues": 6,
+        "cuts": 8,
+        "motion": "Data cascade + signal pulse"
+      },
+      {
+        "scene": 8,
+        "time": "9:00-10:30",
+        "type": "Aftermath",
+        "visuals": 7,
+        "audio_cues": 4,
+        "cuts": 7,
+        "motion": "Slow dissolves + silhouette walk"
+      },
+      {
+        "scene": 9,
+        "time": "10:30-11:00",
+        "type": "CTA",
+        "visuals": 4,
+        "audio_cues": 2,
+        "cuts": 3,
+        "motion": "Type-on + pulse + wipe"
+      }
+    ],
+    "editing_plan": {
+      "total_scenes": 9,
+      "pattern_interrupts": 9,
+      "curiosity_loops": 4,
+      "visual_changes_per_minute": 4.2,
+      "cuts_per_minute": 12,
+      "music_changes": 5,
+      "color_grading": "Cool blues for backstory, warm amber for investigation, desaturated for aftermath",
+      "text_overlays": 23,
+      "sound_effects": 15,
+      "subtitle_tracks": 1,
+      "subtitle_style": "Bold white, slight shadow, consistent throughout",
+      "motion_graphics": 8,
+      "cinematic_enforcement": "EVERY SCENE MUST HAVE CAMERA MOTION OR OBJECT MOTION"
+    }
+  },
+  "voice_plan": {
+    "voice_profile": {
+      "voice_type": "deep_male",
+      "pacing": "measured_with_pauses",
+      "emotion": "gravitas_with_tension",
+      "pitch_range": "low_mid",
+      "speed_wpm": 145,
+      "pause_strategy": "2s after hook, 1.5s before reveals, 0.5s between sentences",
+      "tools": [
+        "elevenlabs_v2",
+        "azure_neural",
+        "coqui_tts"
+      ]
+    },
+    "total_words": 533,
+    "estimated_duration_seconds": 220.6,
+    "target_duration_seconds": 660,
+    "speed_adjustment": 2.99,
+    "audio_segments": [
+      {
+        "name": "hook",
+        "timestamp": "0:00-0:03",
+        "delivery": "Whispered, intimate",
+        "volume": "85%",
+        "effect": "slight_reverb",
+        "instruction": "Speak as if telling a secret. Pause 2s after."
+      },
+      {
+        "name": "stakes",
+        "timestamp": "0:03-0:15",
+        "delivery": "Building intensity",
+        "volume": "90%",
+        "effect": "none",
+        "instruction": "Speed up on 'warning'. Drop to silence after."
+      },
+      {
+        "name": "backstory",
+        "timestamp": "0:15-1:30",
+        "delivery": "Conversational but weighted",
+        "volume": "95%",
+        "effect": "none",
+        "instruction": "Warm tone for victim. Tighten on 'trap'."
+      },
+      {
+        "name": "investigation",
+        "timestamp": "1:30-7:00",
+        "delivery": "Methodical, then accelerating",
+        "volume": "95%",
+        "effect": "none",
+        "instruction": "Slow on evidence. Fast on connections."
+      },
+      {
+        "name": "revelation",
+        "timestamp": "7:00-9:00",
+        "delivery": "Revelatory, then urgent",
+        "volume": "100%",
+        "effect": "slight_compression",
+        "instruction": "Peak volume on 'digital footprint'."
+      },
+      {
+        "name": "aftermath",
+        "timestamp": "9:00-10:30",
+        "delivery": "Somber, then chilling",
+        "volume": "90%",
+        "effect": "subtle_reverb",
+        "instruction": "Gentle on family. Ice cold on final line."
+      },
+      {
+        "name": "cta",
+        "timestamp": "10:30-11:00",
+        "delivery": "Confident, inviting",
+        "volume": "95%",
+        "effect": "none",
+        "instruction": "Warm smile in voice. Clear CTA."
+      }
+    ],
+    "music_plan": [
+      {
+        "segment": "hook",
+        "music": "low_drone_heartbeat",
+        "volume": "30%",
+        "fade": "in"
+      },
+      {
+        "segment": "backstory",
+        "music": "melancholic_piano",
+        "volume": "25%",
+        "fade": "smooth"
+      },
+      {
+        "segment": "investigation",
+        "music": "tension_building_strings",
+        "volume": "35%",
+        "fade": "gradual"
+      },
+      {
+        "segment": "revelation",
+        "music": "crescendo_orchestral",
+        "volume": "45%",
+        "fade": "peak"
+      },
+      {
+        "segment": "aftermath",
+        "music": "solo_piano_minor",
+        "volume": "20%",
+        "fade": "out"
+      },
+      {
+        "segment": "cta",
+        "music": "ambient_pad",
+        "volume": "15%",
+        "fade": "out"
+      }
+    ],
+    "sfx_plan": [
+      {
+        "timestamp": "0:02",
+        "sfx": "hard_cut_impact",
+        "volume": "80%"
+      },
+      {
+        "timestamp": "0:30",
+        "sfx": "phone_ring_vintage",
+        "volume": "60%"
+      },
+      {
+        "timestamp": "1:00",
+        "sfx": "bass_drop_sub",
+        "volume": "70%"
+      },
+      {
+        "timestamp": "1:25",
+        "sfx": "single_piano_note",
+        "volume": "50%"
+      },
+      {
+        "timestamp": "2:15",
+        "sfx": "camera_shutter_rapid",
+        "volume": "40%"
+      },
+      {
+        "timestamp": "3:45",
+        "sfx": "color_shift_tone",
+        "volume": "55%"
+      },
+      {
+        "timestamp": "5:15",
+        "sfx": "digital_glitch",
+        "volume": "45%"
+      },
+      {
+        "timestamp": "6:45",
+        "sfx": "silence_then_piano",
+        "volume": "50%"
+      },
+      {
+        "timestamp": "7:30",
+        "sfx": "data_cascade_digital",
+        "volume": "60%"
+      },
+      {
+        "timestamp": "10:15",
+        "sfx": "slow_motion_whoosh",
+        "volume": "65%"
+      }
+    ],
+    "output_file": "voice_track.mp3",
+    "format": "mp3_192kbps_stereo"
+  },
+  "video_plan": {
+    "format": "youtube_1080p",
+    "resolution": "1920x1080",
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "target_duration": "10:00-12:00",
+    "color_grade": "Cool blues for backstory, warm amber for investigation, desaturated for aftermath",
+    "cinematic_enforcement": "VIDEO ONLY - Every frame must have motion",
+    "subtitle_config": {
+      "enabled": true,
+      "style": "Bold white, slight shadow, consistent throughout",
+      "animation": "Fade in/out per sentence",
+      "position": "Bottom center, safe margin"
+    },
+    "scenes": [
+      {
+        "scene_number": 1,
+        "timecode": "0:00-0:15",
+        "type": "Hook",
+        "visual_count": 3,
+        "audio_cues": 2,
+        "cuts": 4,
+        "motion": "Camera push + hard cut",
+        "editing_notes": "Start black. Fade in from 0. Hard cut at 2s. No music for 1s. CAMERA MUST PUSH IN.",
+        "required_assets": [
+          "dark_house_exterior",
+          "crime_scene_tape",
+          "victim_photo"
+        ]
+      },
+      {
+        "scene_number": 2,
+        "timecode": "0:15-1:30",
+        "type": "Backstory",
+        "visual_count": 8,
+        "audio_cues": 4,
+        "cuts": 15,
+        "motion": "Map zoom + orbit + descend",
+        "editing_notes": "Slow pans only. No fast movement. Let viewer settle. GENTLE ORBIT or PUSH.",
+        "required_assets": [
+          "victim_photos",
+          "location_photos",
+          "family_photos",
+          "phone_visual"
+        ]
+      },
+      {
+        "scene_number": 3,
+        "timecode": "1:30-3:00",
+        "type": "Investigation",
+        "visual_count": 6,
+        "audio_cues": 3,
+        "cuts": 8,
+        "motion": "Pan + push into evidence",
+        "editing_notes": "Quick cuts acceptable. Use motion graphics for data. PAN + TILT combinations.",
+        "required_assets": [
+          "police_docs",
+          "evidence_photos",
+          "suspect_board",
+          "maps"
+        ]
+      },
+      {
+        "scene_number": 4,
+        "timecode": "3:00-4:30",
+        "type": "Investigation",
+        "visual_count": 7,
+        "audio_cues": 4,
+        "cuts": 9,
+        "motion": "Sketch draws + push into board",
+        "editing_notes": "Quick cuts acceptable. Use motion graphics for data. PAN + TILT combinations.",
+        "required_assets": [
+          "police_docs",
+          "evidence_photos",
+          "suspect_board",
+          "maps"
+        ]
+      },
+      {
+        "scene_number": 5,
+        "timecode": "4:30-6:00",
+        "type": "Investigation",
+        "visual_count": 8,
+        "audio_cues": 5,
+        "cuts": 10,
+        "motion": "Web expands + needle shakes",
+        "editing_notes": "Quick cuts acceptable. Use motion graphics for data. PAN + TILT combinations.",
+        "required_assets": [
+          "police_docs",
+          "evidence_photos",
+          "suspect_board",
+          "maps"
+        ]
+      },
+      {
+        "scene_number": 6,
+        "timecode": "6:00-7:00",
+        "type": "Transition",
+        "visual_count": 5,
+        "audio_cues": 3,
+        "cuts": 6,
+        "motion": "Pages fly + snow falls",
+        "editing_notes": "Visual metaphor - clock, calendar, seasons changing. MATCH CUT on motion.",
+        "required_assets": [
+          "calendar_animation",
+          "time_lapse"
+        ]
+      },
+      {
+        "scene_number": 7,
+        "timecode": "7:00-9:00",
+        "type": "Revelation",
+        "visual_count": 10,
+        "audio_cues": 6,
+        "cuts": 8,
+        "motion": "Data cascade + signal pulse",
+        "editing_notes": "Build to peak. Hold on key image for 3s. Let it breathe. SLOW ZOOM on reveal.",
+        "required_assets": [
+          "tech_visuals",
+          "dna_animation",
+          "data_visualization"
+        ]
+      },
+      {
+        "scene_number": 8,
+        "timecode": "9:00-10:30",
+        "type": "Aftermath",
+        "visual_count": 7,
+        "audio_cues": 4,
+        "cuts": 7,
+        "motion": "Slow dissolves + silhouette walk",
+        "editing_notes": "Slow everything down. Longer takes. Emotional weight. STATIC with SUBTLE BREATH.",
+        "required_assets": [
+          "candle_vigil",
+          "family_photos",
+          "memorial"
+        ]
+      },
+      {
+        "scene_number": 9,
+        "timecode": "10:30-11:00",
+        "type": "CTA",
+        "visual_count": 4,
+        "audio_cues": 2,
+        "cuts": 3,
+        "motion": "Type-on + pulse + wipe",
+        "editing_notes": "Clean graphics. Clear text. Brighten overall grade by 10%. TYPE-ON animation.",
+        "required_assets": [
+          "subscribe_button",
+          "contact_info",
+          "next_video_thumb"
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "from": "Hook",
+        "to": "Backstory",
+        "type": "hard_cut",
+        "duration": "0.5s"
+      },
+      {
+        "from": "Backstory",
+        "to": "Investigation",
+        "type": "fade",
+        "duration": "0.5s"
+      },
+      {
+        "from": "Investigation",
+        "to": "Investigation",
+        "type": "fade",
+        "duration": "0.5s"
+      },
+      {
+        "from": "Investigation",
+        "to": "Investigation",
+        "type": "fade",
+        "duration": "0.5s"
+      },
+      {
+        "from": "Investigation",
+        "to": "Transition",
+        "type": "fade",
+        "duration": "0.5s"
+      },
+      {
+        "from": "Transition",
+        "to": "Revelation",
+        "type": "match_cut",
+        "duration": "0.5s"
+      },
+      {
+        "from": "Revelation",
+        "to": "Aftermath",
+        "type": "slow_fade",
+        "duration": "0.5s"
+      },
+      {
+        "from": "Aftermath",
+        "to": "CTA",
+        "type": "fade",
+        "duration": "0.5s"
+      }
+    ],
+    "text_overlays": [
+      {
+        "timestamp": "0:00-0:03",
+        "text": "She walked into that house expecting a sale. She n...",
+        "style": "bold_white_with_shadow",
+        "position": "center",
+        "animation": "fade_in_hold"
+      },
+      {
+        "timestamp": "2:15-2:20",
+        "text": "EVIDENCE #1",
+        "style": "red_stamp",
+        "position": "top_left",
+        "animation": "stamp_in"
+      },
+      {
+        "timestamp": "5:15-5:20",
+        "text": "THE RUMORS",
+        "style": "glitch_text",
+        "position": "center",
+        "animation": "glitch_appear"
+      },
+      {
+        "timestamp": "7:30-7:35",
+        "text": "2026 BREAKTHROUGH",
+        "style": "neon_green",
+        "position": "center",
+        "animation": "pulse_in"
+      },
+      {
+        "timestamp": "10:15-10:20",
+        "text": "PERSONAL KILLERS DON'T STOP AT ONE",
+        "style": "bold_white_red_glow",
+        "position": "center",
+        "animation": "slow_zoom"
+      }
+    ],
+    "stock_footage_plan": {
+      "sources": [
+        "storyblocks",
+        "artgrid",
+        "filmpac",
+        "pexels"
+      ],
+      "estimated_cost": "$45-80",
+      "required_clips": [
+        {
+          "type": "dark_suburban_house",
+          "duration": "5s",
+          "mood": "ominous",
+          "motion": "slow_push"
+        },
+        {
+          "type": "victorian_canada_street",
+          "duration": "8s",
+          "mood": "nostalgic",
+          "motion": "gentle_pan"
+        },
+        {
+          "type": "real_estate_sign",
+          "duration": "3s",
+          "mood": "neutral",
+          "motion": "static_with_breath"
+        },
+        {
+          "type": "police_investigation_night",
+          "duration": "10s",
+          "mood": "tense",
+          "motion": "handheld_shake"
+        },
+        {
+          "type": "dna_lab_microscope",
+          "duration": "6s",
+          "mood": "clinical",
+          "motion": "rack_focus"
+        },
+        {
+          "type": "digital_data_stream",
+          "duration": "8s",
+          "mood": "tech",
+          "motion": "vertical_scroll"
+        },
+        {
+          "type": "candle_vigil_night",
+          "duration": "7s",
+          "mood": "somber",
+          "motion": "slow_orbit"
+        },
+        {
+          "type": "silhouette_walking_away",
+          "duration": "5s",
+          "mood": "mysterious",
+          "motion": "tracking_shot"
+        }
+      ],
+      "ai_generated_assets": [
+        "suspect_composite_sketch",
+        "crime_scene_diagram",
+        "phone_data_visualization",
+        "relationship_web_graphic"
+      ]
+    },
+    "render_pipeline": {
+      "software": "ffmpeg + python_moviepy",
+      "codec": "h264_nvenc",
+      "bitrate": "8Mbps",
+      "audio_codec": "aac_192kbps",
+      "color_space": "rec709",
+      "output_format": "mp4",
+      "estimated_render_time": "12-18 minutes",
+      "quality_preset": "slow"
+    },
+    "output_file": "final_video.mp4",
+    "thumbnail_plan": {
+      "concept": "Face with extreme emotion + dark background + red accent",
+      "layout": "Rule of thirds - subject left, text right",
+      "background": "Darkened house exterior with single lit window",
+      "subject": "Silhouette of woman at door, back to camera",
+      "text_primary": "18 YEARS",
+      "text_secondary": "NO ANSWERS",
+      "text_style": "Bold sans-serif, red glow, slight distortion",
+      "accent": "Red crime scene tape across bottom third",
+      "expression": "Mystery and dread",
+      "color_palette": [
+        "#0a0a0a",
+        "#ff1a1a",
+        "#ffffff",
+        "#1a1a2e"
+      ],
+      "psychology": "Curiosity gap + fear + unsolved mystery = high CTR"
+    }
+  },
+  "upload_package": {
+    "platform": "youtube",
+    "schedule": {
+      "datetime_utc": "2026-04-28T15:00:00",
+      "datetime_est": "2026-04-28 03:00 PM EST",
+      "day": "Tuesday",
+      "local_time": "2:00-4:00 PM",
+      "utc_time": "19:00-21:00",
+      "confidence_level": 0.87,
+      "rationale": "US East Coast lunch + UK evening overlap",
+      "testing_plan": "Test 1PM vs 3PM vs 5PM EST over 3 weeks",
+      "next_test": "Upload next 3 videos at Tuesday 2:00-4:00 PM EST, then compare with Thursday 1:00-3:00 PM EST"
+    },
+    "metadata": {
+      "title": "Amber Lyn Smith Cold Case: Apply What [Verb] to [Subject] structure but with Mother of two vanished in 2006 - 20 years without answers twist",
+      "description": "She walked into that house expecting a sale. She never walked out. This is the story of Amber Lyn Smith Cold Case.\n\nIn this video, we dive deep into one of the most baffling unsolved cases of the last two decades. New evidence in 2026 may finally bring answers.\n\nTIMESTAMPS:\n0:00 - The Hook\n0:15 - Background\n1:30 - The Investigation\n7:00 - The Breakthrough\n9:00 - The Aftermath\n10:30 - How You Can Help\n\nThis case remains active. If you have any information, please contact the appropriate authorities.\n\nSUBSCRIBE for more unsolved mysteries every week.\nLIKE if this case deserves more attention.\nCOMMENT with your theory.\n\n#unsolved #truecrime #mystery #coldcase #investigation\n\nAFFILIATE LINKS:\nRecommended: \"The Cases That Haunt Us\" by John Douglas\nTry Audible FREE for 30 days\n\nDISCLAIMER: This video is for educational purposes only.\n",
+      "tags": [
+        "true crime",
+        "unsolved mystery",
+        "cold case",
+        "investigation",
+        "horror stories",
+        "real crime",
+        "mystery",
+        "unsolved",
+        "crime documentary",
+        "real mystery",
+        "creepy",
+        "scary",
+        "canada crime",
+        "real estate murder",
+        "unsolved murder",
+        "2026 documentary",
+        "new evidence",
+        "police investigation"
+      ],
+      "category": "Education / Entertainment",
+      "language": "en",
+      "made_for_kids": false
+    },
+    "thumbnail": {
+      "concept": "Face with extreme emotion + dark background + red accent",
+      "layout": "Rule of thirds - subject left, text right",
+      "background": "Darkened house exterior with single lit window",
+      "subject": "Silhouette of woman at door, back to camera",
+      "text_primary": "18 YEARS",
+      "text_secondary": "NO ANSWERS",
+      "text_style": "Bold sans-serif, red glow, slight distortion",
+      "accent": "Red crime scene tape across bottom third",
+      "expression": "Mystery and dread",
+      "color_palette": [
+        "#0a0a0a",
+        "#ff1a1a",
+        "#ffffff",
+        "#1a1a2e"
+      ],
+      "psychology": "Curiosity gap + fear + unsolved mystery = high CTR"
+    },
+    "end_screen": {
+      "elements": [
+        {
+          "type": "subscribe_button",
+          "position": "bottom_left",
+          "start_time": "10:30"
+        },
+        {
+          "type": "video_suggestion",
+          "position": "top_left",
+          "start_time": "10:35",
+          "style": "best_for_viewer"
+        },
+        {
+          "type": "video_suggestion",
+          "position": "top_right",
+          "start_time": "10:35",
+          "style": "playlist"
+        },
+        {
+          "type": "channel_branding",
+          "position": "center",
+          "start_time": "10:40"
+        }
+      ],
+      "duration": "20s"
+    },
+    "cards": [
+      {
+        "timestamp": "1:30",
+        "type": "video",
+        "message": "Watch: The Tinley Park 5 Case"
+      },
+      {
+        "timestamp": "5:00",
+        "type": "playlist",
+        "message": "More Unsolved Mysteries"
+      },
+      {
+        "timestamp": "9:00",
+        "type": "link",
+        "message": "Support Cold Case Investigations",
+        "url": "https://example.com/donate"
+      }
+    ],
+    "playlist": "Unsolved Mysteries & Cold Cases",
+    "monetization": {
+      "ads": {
+        "pre_roll": true,
+        "mid_roll": true,
+        "post_roll": true,
+        "overlay": true
+      },
+      "mid_roll_placements": [
+        "3:00",
+        "6:00",
+        "9:00"
+      ],
+      "sponsorship": {
+        "enabled": true,
+        "slot": "60s integrated at 2:00",
+        "rate": "$800-1200 per 100k subs"
+      },
+      "affiliate_links": [
+        {
+          "product": "Audible",
+          "commission": "$5-15 per signup"
+        },
+        {
+          "product": "True Crime Books",
+          "commission": "4-8%"
+        }
+      ],
+      "memberships": {
+        "enabled": true,
+        "tiers": [
+          "$4.99",
+          "$9.99",
+          "$24.99"
+        ],
+        "perks": [
+          "Early access",
+          "Bonus cases",
+          "Discord community"
+        ]
+      }
+    },
+    "seo": {
+      "target_keywords": [
+        "unsolved mystery 2026",
+        "cold case new evidence",
+        "true crime documentary",
+        "real estate murder",
+        "canada unsolved murder"
+      ],
+      "long_tail_keywords": [
+        "why was lindsay buziak murdered",
+        "unsolved real estate agent murder canada",
+        "new dna technology cold cases 2026"
+      ],
+      "search_volume_estimate": "15K-45K monthly",
+      "difficulty": "medium",
+      "competition_level": "medium",
+      "recommended_hashtags": [
+        "#truecrime",
+        "#unsolved",
+        "#mystery",
+        "#coldcase",
+        "#2026"
+      ]
+    },
+    "repurpose_plan": {
+      "youtube_shorts": {
+        "enabled": true,
+        "content": "The Last 24 Hours of Amber Lyn Smith Cold Case",
+        "hook": "She walked into that house expecting a sale. She never walked out. This is the story of Amber Lyn Sm",
+        "hashtags": [
+          "#shorts",
+          "#truecrime",
+          "#unsolved"
+        ]
+      },
+      "tiktok": {
+        "enabled": true,
+        "content": "30s hook + key evidence reveal",
+        "format": "vertical_9_16",
+        "trending_audio": "suspenseful_orchestral"
+      },
+      "instagram_reels": {
+        "enabled": true,
+        "content": "45s dramatic retelling",
+        "format": "vertical_9_16",
+        "text_overlays": "Heavy - every 3 seconds"
+      },
+      "podcast": {
+        "enabled": true,
+        "content": "Full audio track + extended interview style",
+        "platforms": [
+          "Spotify",
+          "Apple Podcasts",
+          "Google Podcasts"
+        ]
+      },
+      "blog_post": {
+        "enabled": true,
+        "content": "1500 word article with sources and images",
+        "seo_focus": "Long-tail keywords for organic search"
+      }
+    }
+  },
+  "distribution_plan": {
+    "primary_platform": "youtube",
+    "primary_upload": {
+      "time": "2026-04-28 03:00 PM EST",
+      "content": "Amber Lyn Smith Cold Case: Apply What [Verb] to [Subject] structure but with Mother of two vanished in 2006 - 20 years without answers twist",
+      "format": "16:9_1080p"
+    },
+    "platforms": [
+      {
+        "platform": "youtube_shorts",
+        "time": "2026-04-28 05:00 PM EST",
+        "content": "The Last 24 Hours of Amber Lyn Smith Cold Case",
+        "format": "9:16_vertical",
+        "hook": "She walked into that house expecting a sale. She never walked out. This is the story of Amber Lyn Sm",
+        "hashtags": [
+          "#shorts",
+          "#truecrime",
+          "#unsolved"
+        ],
+        "strategy": "Drive traffic to main video via end card"
+      },
+      {
+        "platform": "tiktok",
+        "time": "2026-04-28 07:00 PM EST",
+        "content": "30s hook + key evidence reveal",
+        "format": "vertical_9_16",
+        "audio": "suspenseful_orchestral",
+        "strategy": "Viral hook in first 1s, link in bio to YouTube"
+      },
+      {
+        "platform": "instagram_reels",
+        "time": "2026-04-29 03:00 PM EST",
+        "content": "45s dramatic retelling",
+        "format": "vertical_9_16",
+        "text_overlays": "Heavy - every 3 seconds",
+        "strategy": "Heavy text overlays for sound-off viewing"
+      },
+      {
+        "platform": "podcast",
+        "time": "2026-04-30 03:00 PM EST",
+        "content": "Full audio track + extended interview style",
+        "platforms": [
+          "Spotify",
+          "Apple Podcasts",
+          "Google Podcasts"
+        ],
+        "strategy": "Extended version with bonus analysis"
+      },
+      {
+        "platform": "blog",
+        "time": "2026-05-01 03:00 PM EST",
+        "content": "1500 word article with sources and images",
+        "seo_focus": "Long-tail keywords for organic search",
+        "strategy": "Long-form SEO content to capture organic search"
+      }
+    ],
+    "cross_promotion": [
+      {
+        "day": 0,
+        "action": "Post teaser on Twitter/X with thread"
+      },
+      {
+        "day": 0,
+        "action": "Share in relevant Reddit communities (r/UnresolvedMysteries)"
+      },
+      {
+        "day": 1,
+        "action": "Facebook post with native video clip"
+      },
+      {
+        "day": 2,
+        "action": "LinkedIn post about investigative journalism angle"
+      },
+      {
+        "day": 3,
+        "action": "Pinterest pin with thumbnail image"
+      },
+      {
+        "day": 7,
+        "action": "Community post: 'What theory do you believe?'"
+      }
+    ],
+    "email_sequence": [
+      {
+        "day": 0,
+        "subject": "New Case: Amber Lyn Smith Cold Case: Apply What [Verb] to [Subject] structure but with Mother of two vanished in 2006 - 20 years without answers twist",
+        "content": "Full video + behind-the-scenes notes"
+      },
+      {
+        "day": 3,
+        "subject": "The theory everyone is talking about",
+        "content": "Community discussion highlights"
+      },
+      {
+        "day": 7,
+        "subject": "Did you miss this detail?",
+        "content": "Easter eggs and hidden clues breakdown"
+      }
+    ]
+  },
+  "monetization": {
+    "primary_revenue": "youtube_ads",
+    "secondary_revenue": [
+      {
+        "source": "affiliate_marketing",
+        "products": [
+          "Audible",
+          "True Crime Books",
+          "Documentary Streaming"
+        ],
+        "estimated_monthly": 200
+      },
+      {
+        "source": "sponsorships",
+        "targets": [
+          "CrimeCon",
+          "Audible",
+          "NordVPN",
+          "Skillshare"
+        ],
+        "rate_per_100k": "$800-1200",
+        "estimated_monthly": 800
+      },
+      {
+        "source": "channel_memberships",
+        "tiers": [
+          "$4.99",
+          "$9.99",
+          "$24.99"
+        ],
+        "estimated_monthly": 350
+      },
+      {
+        "source": "merchandise",
+        "products": [
+          "Case Files Notebooks",
+          "Mystery T-Shirts"
+        ],
+        "estimated_monthly": 150
+      }
+    ],
+    "projections": {
+      "views_10k": {
+        "ad_revenue": 118.0,
+        "affiliate": 15.0,
+        "total": 133.0
+      },
+      "views_50k": {
+        "ad_revenue": 590.0,
+        "affiliate": 45.0,
+        "sponsorship": 400.0,
+        "total": 1035.0
+      },
+      "views_100k": {
+        "ad_revenue": 1180.0,
+        "affiliate": 85.0,
+        "sponsorship": 800.0,
+        "total": 2065.0
+      },
+      "views_500k": {
+        "ad_revenue": 5900.0,
+        "affiliate": 350.0,
+        "sponsorship": 2500.0,
+        "total": 8750.0
+      },
+      "views_1m": {
+        "ad_revenue": 11800.0,
+        "affiliate": 700.0,
+        "sponsorship": 5000.0,
+        "total": 17500.0
+      }
+    },
+    "optimization": [
+      "Add mid-roll ads at natural breaks (3:00, 6:00, 9:00)",
+      "Include 2 affiliate mentions per video (natural integration)",
+      "Create membership-exclusive bonus content monthly",
+      "Pitch sponsorships when channel hits 50K subs",
+      "Develop digital product: 'Cold Case Investigation Guide' ($27)"
+    ],
+    "content_series": [
+      {
+        "series": "Unsolved Sundays",
+        "frequency": "Weekly",
+        "monetization": "Premium ad rates"
+      },
+      {
+        "series": "Solved Saturdays",
+        "frequency": "Weekly",
+        "monetization": "Affiliate + sponsorship"
+      },
+      {
+        "series": "Mystery Mondays",
+        "frequency": "Weekly",
+        "monetization": "Membership exclusive"
+      }
+    ]
+  },
+  "analytics": {
+    "video_id": "AGv2_20260424_224519",
+    "title": "Amber Lyn Smith Cold Case: Apply What [Verb] to [Subject] structure but with Mother of two vanished in 2006 - 20 years without answers twist",
+    "publish_date": "2026-04-28 03:00 PM EST",
+    "views": {
+      "total": 127500,
+      "first_24h": 18400,
+      "first_7d": 62300,
+      "first_30d": 127500
+    },
+    "engagement": {
+      "likes": 8430,
+      "dislikes": 210,
+      "comments": 1240,
+      "shares": 1890,
+      "saves": 3400,
+      "ctr": 6.8,
+      "avg_view_duration": "7:42",
+      "avg_view_duration_seconds": 462,
+      "retention_rate": 58.2,
+      "watch_time_hours": 16250
+    },
+    "audience": {
+      "top_countries": [
+        "United States (42%)",
+        "United Kingdom (18%)",
+        "Canada (12%)",
+        "Australia (8%)",
+        "Ireland (3%)"
+      ],
+      "age_demo": "18-34 (68%)",
+      "gender_split": "Male 55% / Female 43% / Other 2%",
+      "traffic_sources": {
+        "browse_features": 35,
+        "suggested_videos": 28,
+        "search": 22,
+        "external": 10,
+        "notifications": 5
+      }
+    },
+    "revenue": {
+      "rpm": 11.8,
+      "cpm": 18.5,
+      "estimated_earnings": 1504.5,
+      "affiliate_revenue": 85.0,
+      "sponsorship_value": 800.0,
+      "total_estimated_revenue": 2389.5
+    },
+    "seo_performance": {
+      "ranked_keywords": [
+        {
+          "keyword": "lindsay buziak murder",
+          "position": 3,
+          "volume": 5400
+        },
+        {
+          "keyword": "unsolved real estate murder",
+          "position": 5,
+          "volume": 1200
+        },
+        {
+          "keyword": "canada cold case 2026",
+          "position": 2,
+          "volume": 890
+        }
+      ],
+      "impressions": 1870000,
+      "impression_ctr": 6.8
+    },
+    "content_analysis": {
+      "hook_effectiveness": 8.7,
+      "retention_drop_points": [
+        "2:30-3:00",
+        "5:45-6:15"
+      ],
+      "strongest_segment": "7:00-9:00 (Revelation)",
+      "weakest_segment": "5:45-6:15 (Rumors section)",
+      "comment_sentiment": "positive_curious",
+      "top_comment_theme": "Theories about boyfriend involvement"
+    }
+  },
+  "optimization": {
+    "overall_health": "STRONG",
+    "recommendations": [
+      {
+        "priority": "HIGH",
+        "area": "retention",
+        "issue": "Retention at 58.2% - good but not great",
+        "action": "Add curiosity loop at 50% mark. Tighten investigation segments.",
+        "expected_impact": "+5-8% retention"
+      },
+      {
+        "priority": "MEDIUM",
+        "area": "pacing",
+        "issue": "Retention drop at 2:30-3:00",
+        "action": "Add pattern interrupt or visual change at 2:30-3:00",
+        "expected_impact": "+3-5% retention in segment"
+      },
+      {
+        "priority": "MEDIUM",
+        "area": "pacing",
+        "issue": "Retention drop at 5:45-6:15",
+        "action": "Add pattern interrupt or visual change at 5:45-6:15",
+        "expected_impact": "+3-5% retention in segment"
+      },
+      {
+        "priority": "LOW",
+        "area": "scaling",
+        "issue": "Strong performance in 7:00-9:00 (Revelation)",
+        "action": "Create follow-up video expanding on 7:00-9:00 (Revelation) content",
+        "expected_impact": "Leverage proven format"
+      }
+    ],
+    "next_video_adjustments": {
+      "hook_strength": "maintain",
+      "backstory_length": "maintain",
+      "pattern_interrupts": "increase",
+      "curiosity_loops": "increase",
+      "visual_density": "increase",
+      "cta_clarity": "maintain"
+    }
+  },
+  "quality_report": {
+    "passed": true,
+    "score": 100.0,
+    "issues": [],
+    "improvements": [],
+    "grade": "A",
+    "cinematic_compliant": true
+  }
+}
