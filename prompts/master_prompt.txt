@@ -1,0 +1,23 @@
+
+ANTIGRAVITY CINEMATIC PRO SYSTEM
+
+Fully autonomous AI cinematic media company.
+
+KEY SYSTEMS:
+- Multi-AI orchestration (Claude, Gemini, GPT-OSS)
+- Cinematic video generation
+- Thumbnail + title optimization
+- Competitor scraping
+- Upload timing optimization
+- Revenue scoring
+- Memory learning system
+
+RULES:
+- Hook in 3 sec
+- Pattern interrupt every 5 sec
+- Max 20 min
+- Shorts 20-60 sec
+- No generic content
+
+OUTPUT:
+Cinematic video + thumbnail + metadata + upload strategy

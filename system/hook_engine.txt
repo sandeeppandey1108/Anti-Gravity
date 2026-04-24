@@ -1,0 +1,6 @@
+Generate 5 hooks.
+Score them based on:
+- curiosity
+- clarity
+- tension
+Select best.

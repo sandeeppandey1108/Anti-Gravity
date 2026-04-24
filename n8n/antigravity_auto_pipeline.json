@@ -1,0 +1,165 @@
+{
+  "name": "Antigravity Auto Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "value": 6
+            }
+          ]
+        }
+      },
+      "id": "cron",
+      "name": "Cron Trigger",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "niche",
+              "value": "={{$env.ANTIGRAVITY_TOPIC_SEED || 'horror / ghost / haunted'}}"
+            }
+          ]
+        }
+      },
+      "id": "set_niche",
+      "name": "Select Niche",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        460,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://www.googleapis.com/youtube/v3/search",
+        "responseFormat": "json",
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "part",
+              "value": "snippet"
+            },
+            {
+              "name": "q",
+              "value": "={{$json.niche}}"
+            },
+            {
+              "name": "order",
+              "value": "viewCount"
+            },
+            {
+              "name": "maxResults",
+              "value": "10"
+            },
+            {
+              "name": "key",
+              "value": "={{$env.YOUTUBE_API_KEY}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "youtube_search",
+      "name": "YouTube Search",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        700,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst niche = $json.niche || 'horror / ghost / haunted';\nconst prompt = `\nYou are ANTIGRAVITY.\n\nGoal:\n- discover competitors automatically\n- analyze viral videos\n- analyze niches\n- identify the best upload timing\n- extract patterns\n- generate original video ideas\n- create a monetizable content plan\n\nNiche: ${niche}\n\nReturn:\n1. Competitor Discovery\n2. Viral Patterns\n3. Niche Analysis\n4. Upload Timing Analysis\n5. Gap Analysis\n6. Video Ideas (Ranked)\n7. Titles + Hooks\n8. Script\n9. Scene Breakdown\n10. Editing Plan\n11. Short-form Versions\n12. Distribution Plan\n13. Monetization Plan\n14. Optimization Strategy\n`;\nreturn [{ json: { niche, prompt } }];\n"
+      },
+      "id": "build_prompt",
+      "name": "Build Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        940,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{$env.ANTIGRAVITY_LLM_ENDPOINT}}",
+        "method": "POST",
+        "responseFormat": "json",
+        "sendBody": true,
+        "jsonBody": "={\"prompt\": $json.prompt}",
+        "options": {}
+      },
+      "id": "llm_call",
+      "name": "LLM Call",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1180,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Cron Trigger": {
+      "main": [
+        [
+          {
+            "node": "Select Niche",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Select Niche": {
+      "main": [
+        [
+          {
+            "node": "YouTube Search",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YouTube Search": {
+      "main": [
+        [
+          {
+            "node": "Build Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Prompt": {
+      "main": [
+        [
+          {
+            "node": "LLM Call",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "versionId": "1"
+}
