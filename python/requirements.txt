@@ -1,0 +1,12 @@
+moviepy
+gtts
+pillow
+ffmpeg-python
+yt-dlp
+requests
+pandas
+numpy
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2

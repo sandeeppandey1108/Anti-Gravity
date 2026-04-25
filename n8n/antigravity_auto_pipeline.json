@@ -1,0 +1,163 @@
+{
+  "name": "Antigravity Cinematic Auto Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "value": 6
+            }
+          ]
+        }
+      },
+      "id": "cron",
+      "name": "Cron Trigger",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            {
+              "name": "niche",
+              "value": "={{$env.ANTIGRAVITY_TOPIC_SEED || 'horror / ghost / haunted'}}"
+            }
+          ]
+        }
+      },
+      "id": "set_niche",
+      "name": "Select Niche",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://www.googleapis.com/youtube/v3/search",
+        "responseFormat": "json",
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "part",
+              "value": "snippet"
+            },
+            {
+              "name": "q",
+              "value": "={{$json.niche}}"
+            },
+            {
+              "name": "order",
+              "value": "viewCount"
+            },
+            {
+              "name": "maxResults",
+              "value": "10"
+            },
+            {
+              "name": "key",
+              "value": "={{$env.YOUTUBE_API_KEY}}"
+            }
+          ]
+        }
+      },
+      "id": "youtube_search",
+      "name": "YouTube Search",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        660,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const niche = $json.niche || 'horror / ghost / haunted';\nconst prompt = `You are ANTIGRAVITY. Return competitor discovery, patterns, niche analysis, upload timing, ideas, scripts, scene breakdown, editing plan, shorts, distribution, audience growth, monetization, compliance, optimization. Niche: ${niche}`;\nreturn [{ json: { niche, prompt } }];"
+      },
+      "id": "build_prompt",
+      "name": "Build Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{$env.ANTIGRAVITY_LLM_ENDPOINT}}",
+        "method": "POST",
+        "responseFormat": "json",
+        "sendBody": true,
+        "jsonBody": "={\"prompt\": $json.prompt}"
+      },
+      "id": "llm_call",
+      "name": "LLM Call",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        1100,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Cron Trigger": {
+      "main": [
+        [
+          {
+            "node": "Select Niche",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Select Niche": {
+      "main": [
+        [
+          {
+            "node": "YouTube Search",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "YouTube Search": {
+      "main": [
+        [
+          {
+            "node": "Build Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Prompt": {
+      "main": [
+        [
+          {
+            "node": "LLM Call",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "versionId": "1"
+}
